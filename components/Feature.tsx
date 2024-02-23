@@ -26,7 +26,8 @@ export const Feature = () => {
     <div className='container pt-16'>
         <div className='grid md:grid-cols-2 gap-y-8 lg:gap-y-4 lg:grid-cols-3 gap-4'>
             {
-                data.map(item => <FeatureCard key={item.title}
+                data.map(item => 
+                <FeatureCard key={item.title}
                 img={item.img}
                 title={item.title}
                 desc={item.desc}
