@@ -1,4 +1,5 @@
 "use client"
+import Cart from '@/components/Cart'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import { store } from '@/redux/store'
@@ -14,6 +15,7 @@ const App = ({children}: {children: React.ReactNode}) => {
         <Provider store={store}>
 
         <NavBar setShowCart={setShowCart}/>
+        {showCart && <Cart setShowCart={setShowCart}/>}
         {children}
         <Footer/>
 

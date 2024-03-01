@@ -36,10 +36,10 @@ const handleTab = (index: number) => {
   setSelectedTab(index);
 
   if (category === "all"){
-    setData(shuffleArray(Data).slice(0, 15));
+    setData(shuffleArray(Data).slice(0, 9));
     return;
   }
-
+  
   const filteredData = Data.filter( (item) => 
 
     item.category.includes(category)

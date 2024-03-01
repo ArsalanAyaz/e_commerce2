@@ -15,7 +15,7 @@ const NavBar = ({setShowCart} : any ) => {
       <div className="container flex justify-between items-center">
       <RxHamburgerMenu className='sm:hidden text-[26px]'/>
       <Link href="/" className='text-4xl font-semibold hover:text-accent'>
-        Logo
+        ARSAL
       </Link>
 
       <ul className="gap-6 hidden sm:flex">
@@ -23,10 +23,10 @@ const NavBar = ({setShowCart} : any ) => {
           Home
         </Link>
 
-        <li className='navLink'> Shop    </li>
-        <li className='navLink'> Blog    </li>
-        <li className='navLink'> Pages   </li>
-        <li className='navLink'> Contact </li>
+        <li className='navLink cursor-pointer'> Shop    </li>
+        <li className='navLink cursor-pointer'> Blog    </li>
+        <li className='navLink cursor-pointer'> Pages   </li>
+        <li className='navLink cursor-pointer'> Contact </li>
 
       </ul>
 
